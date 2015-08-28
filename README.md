@@ -11,3 +11,17 @@ The following is the magnitude and percentage it considers:
 Basic sales tax is applicable at a rate of 10% on all goods, except books, food,
 and medical products that are exempt. Import duty is an additional sales tax
 applicable on all imported goods at a rate of 5%, with no exemptions.
+
+
+## Dependencies
+
+1. Java 1.7 or higher
+1. Apache Ant
+
+##Build and automate the test
+
+give the command
+
+````
+ant
+````
