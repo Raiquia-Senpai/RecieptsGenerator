@@ -10,7 +10,7 @@ public class Goods {
     }
 
     public double salesTax() {
-        if ((nameOfItem.contains("book")) || (nameOfItem.contains("chocolate")) || (nameOfItem.contains("pill"))) {
+        if (isTaxable()) {
             return 0.0;
         }
         else
@@ -18,9 +18,17 @@ public class Goods {
     }
 
     public double importDuty() {
-        if (nameOfItem.contains("imported")) {
+        if (isImported()) {
             return pricePerUnit * 5 / 100.0;
         }
         return 0.0;
+    }
+
+    private boolean isTaxable() {
+        return (nameOfItem.contains("book")) || (nameOfItem.contains("chocolate")) || (nameOfItem.contains("pill"));
+    }
+
+    private boolean isImported() {
+        return nameOfItem.contains("imported");
     }
 }
