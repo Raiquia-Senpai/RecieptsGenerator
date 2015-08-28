@@ -47,4 +47,11 @@ public class GoodsTest {
 
         assertEquals(0.0, goods.salesTax(), 0.0001);
     }
+
+    @Test
+    public void shouldHaveNoSalesTaxAppliedIfItIsABookOfAnyKind() {
+        Goods goods = new Goods("a science book", 11.25);
+
+        assertEquals(0.0, goods.salesTax(), 0.0001);
+    }
 }
