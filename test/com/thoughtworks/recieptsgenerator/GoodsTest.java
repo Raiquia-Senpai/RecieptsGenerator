@@ -33,4 +33,11 @@ public class GoodsTest {
 
         assertEquals(0.0, goods.salesTax(), 0.0001);
     }
+
+    @Test
+    public void shouldHaveNoSalesTaxAppliedIfItIsABoxOfChocolates() {
+        Goods goods = new Goods("a box of chocolates", 11.25);
+
+        assertEquals(0.0, goods.salesTax(), 0.0001);
+    }
 }
