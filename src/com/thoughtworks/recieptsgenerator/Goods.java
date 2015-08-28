@@ -10,6 +10,10 @@ public class Goods {
     }
 
     public double salesTax() {
-        return 0.0;
+        if (nameOfItem.equals("book")) {
+            return 0.0;
+        }
+        else
+            return pricePerUnit * 10 / 100.0;
     }
 }
