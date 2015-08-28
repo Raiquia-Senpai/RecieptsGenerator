@@ -61,4 +61,11 @@ public class GoodsTest {
 
         assertEquals(0.0, goods.importDuty(), 0.0001);
     }
+
+    @Test
+    public void shouldHaveImportDutyIfItIsImported() {
+        Goods goods = new Goods("an imported science book", 50.25);
+
+        assertEquals(2.5125, goods.importDuty(), 0.0001);
+    }
 }

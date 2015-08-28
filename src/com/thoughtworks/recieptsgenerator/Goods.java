@@ -18,6 +18,9 @@ public class Goods {
     }
 
     public double importDuty() {
+        if (nameOfItem.contains("imported")) {
+            return pricePerUnit * 5 / 100.0;
+        }
         return 0.0;
     }
 }
