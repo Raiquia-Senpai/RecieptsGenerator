@@ -10,7 +10,7 @@ public class Goods {
     }
 
     public double salesTax() {
-        if (nameOfItem.equals("book")) {
+        if ((nameOfItem.equals("book")) || (nameOfItem.equals("a chocolate bar"))) {
             return 0.0;
         }
         else
