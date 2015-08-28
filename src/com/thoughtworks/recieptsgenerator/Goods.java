@@ -16,4 +16,8 @@ public class Goods {
         else
             return pricePerUnit * 10 / 100.0;
     }
+
+    public double importDuty() {
+        return 0.0;
+    }
 }
